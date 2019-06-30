@@ -6,6 +6,8 @@ import android.os.Build;
 import android.provider.Settings;
 import android.support.v4.content.LocalBroadcastManager;
 
+import com.socks.library.KLog;
+
 import cn.jpush.android.api.JPushInterface;
 
 public class JPushDemoApp extends Application {
@@ -16,6 +18,7 @@ public class JPushDemoApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        KLog.init(BuildConfig.KLOG_DEBUG,"zhengjun");
         JPushInterface.setDebugMode(true);
         JPushInterface.init(this);
         jPushReceiver = new JPushReceiver();
