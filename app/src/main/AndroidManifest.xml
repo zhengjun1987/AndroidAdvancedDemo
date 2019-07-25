@@ -27,6 +27,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".customizedcomponents.CustomizedComponentsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".GlideTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,8 +45,7 @@
             android:name=".BaseAdapterActivity"
             android:label="@string/title_activity_base_adapter"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity">
-        </activity> <!-- Required SDK核心功能 -->
+        <activity android:name=".MainActivity"></activity> <!-- Required SDK核心功能 -->
         <activity
             android:name="cn.jpush.android.ui.PushActivity"
             android:configChanges="orientation|keyboardHidden"
