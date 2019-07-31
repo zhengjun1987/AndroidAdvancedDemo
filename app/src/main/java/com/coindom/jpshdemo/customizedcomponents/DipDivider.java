@@ -7,10 +7,9 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Rect;
+import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
-
-import androidx.annotation.Nullable;
 
 import com.coindom.jpshdemo.R;
 import com.socks.library.KLog;
